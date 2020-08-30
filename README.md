@@ -20,7 +20,7 @@ In `shell-spider.sh` you need add *email* *revoking delay time*.
 One last step, run following command:
 
 ```shell
-nohub bash shell-spider.sh &
+nohup bash shell-spider.sh &
 ```
 
 It will run in background.
