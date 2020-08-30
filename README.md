@@ -5,19 +5,15 @@ A simple implemented website update monitor by shell.
 
 First rename `mailit.example.sh` to `mailit.sh`, edit it with necessary info.
 
-Then run following command make sure you can receieve email from script(due to your internet connection, it may take time.):
+Then run following command make sure you can receieve email from script(due to your internet connection, it may take time. ):
 
 ```shell
 echo -e "From:mail1@yourdomain.com\nTo:mail2@yourdomain.com\nSubject:It works!\n\nCongratulations!" > mail.txt && bash mailit.sh && rm -f mail.txt
 ```
 
-Then modify `website_shell/00-template.sh`(I know, a bad name.). You need to add URL and crucial regex make sure it can fetch every thing you want.
+Then look at `**-template.sh` modify it make sure it can get correct infomation back.
 
-Just copy same `sh` file into `website_shell`, spider will automatically invoke it in period of time.
-
-In `shell-spider.sh` you need add *email* *revoking delay time*.
-
-One last step, run following command:
+One last step, move all your modified `sh` script to `website_shell/` folder (I know, a bad name) and run following command to make it run at background. (or just `bash shell-spider.sh` make sure everything works well. )
 
 ```shell
 nohup bash shell-spider.sh &
