@@ -3,7 +3,7 @@ A simple implemented website update monitor by shell.
 
 # Usage
 
-First rename `mailit.example.sh` to `mailit.sh`, edit it with necessary info.
+First rename `mailit.example.sh` to `mailit.sh`, edit it with necessary info. And also for shell-spider.sh, add both sender and receiver email address.
 
 Then run following command make sure you can receieve email from script(due to your internet connection, it may take time. ):
 
